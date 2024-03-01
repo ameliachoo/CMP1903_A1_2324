@@ -14,6 +14,9 @@ namespace CMP1903_A1_2324
         /// <summary>
         /// Represents the current value of the die roll
         /// </summary>
+        
+        /* Unnecessary call to _rnd.Next() here, as the only function in this class also sets the value before returning it. */
+        
         public int DiceRoll = _rnd.Next(1, 7);
         
         /// <summary>

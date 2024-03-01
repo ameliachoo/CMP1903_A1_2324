@@ -15,6 +15,9 @@ namespace CMP1903_A1_2324
         /// After completing the tests, it prints a message indicating that all tests have been successful
         /// </summary>
         /// <returns> Returns 0 if all tests pass </returns>
+
+        /* Int works well for allowing multiple exit codes to indicate different results from testing. */
+        /* This isn't implemented, so consider using bool for successful/failed test results, or void since there is currently only one return statement. */
         public int RunTest()
         {
             // Creates a new instance of the Game class
@@ -34,8 +37,14 @@ namespace CMP1903_A1_2324
                 Debug.Assert(thirdRoll >= 1 && thirdRoll <= 6);
             }
             
+            /* When running in Release mode, the program still outputs the following message, even though tests aren't run. */
+            /* Consider using Debug.WriteLine() instead. */
+
             // Prints message indicating all tests passed
             Console.WriteLine("All tests passed.");
+
+            /* As mentioned elsewhere, could use a bool instead, as this runs even if tests fail. */
+
             // Returns 0 to indicate success
             return 0;
         }
