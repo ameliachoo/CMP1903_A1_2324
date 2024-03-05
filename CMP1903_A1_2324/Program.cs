@@ -5,12 +5,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CMP1903_A1_2324
-{
-    internal class Program
-    {
-        static void Main(string[] args)
-        {
+namespace CMP1903_A1_2324 {
+    
+    internal class Program {
+        
+        static void Main(string[] args) {
+            
             // Variable to store user input
             string userInput = null;
             
@@ -21,8 +21,8 @@ namespace CMP1903_A1_2324
             // Runs tests to ensure correctness of the game logic (works in debug mode)
             tests.RunTest();
             
-            while (userInput != "exit")
-            {
+            while (userInput != "exit") {
+                
                 // Rolls three dice and retrieves the total and individual roll values
                 (int sum, int firstRoll, int secondRoll, int thirdRoll) = game.RollTotal();
                 
